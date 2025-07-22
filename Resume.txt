@@ -1,0 +1,104 @@
+PARTH PAHWA  
+AI Engineer  
++91 7835938373 | parthpahwa1301@gmail.com | Linkedin | Github | Rohini, New Delhi, India  
+
+SUMMARY  
+AI Engineer with a strong foundation across the full AI umbrella — Machine Learning, Deep Learning, Computer Vision, and NLP. Backed by 1 year of cumulative internship experience, part of the NVIDIA Inception and Developer Programs, and NVIDIA DLI Certified. Skilled in building and deploying end-to-end, production-ready GenAI agents and accelerated AI systems using CUDA, NeMo, and TensorRT — focused on solving real-world problems with impact.
+
+EDUCATION  
+NIIT University  
+Bachelor of Technology in Computer Science (AI Specialization)  
+Aug 2022 – Aug 2026 | GPA: 9.18 / 10 | Neemrana, Rajasthan  
+
+Delhi Public School, Rohini  
+12th Standard – CBSE 2022 | GPA: 8.18 / 10 | New Delhi, India  
+
+Laurel High The School  
+10th Standard – CBSE 2020 | GPA: 9.74 / 10 | New Delhi, India  
+
+EXPERIENCE  
+Ernst & Young (EY) – AI/ML Intern  
+May 2025 – Jul 2025 | New Delhi, India  
+– Worked on “AI/ML Interventions in Government and Public Sector” under EY’s Technology Consulting.  
+– Researched AI use cases in India’s TTDF program and supported backend technical analysis.  
+– Built mini projects and completed certifications in RAG, LLMs, Deep Learning, Django, and CUDA.
+
+Smarrtif AI – Associate Consultant and AI Trainer  
+May 2025 – Jul 2025 | New Delhi, India  
+– Mentored school, college, and corporate learners in AI. Conducted technical interviews.  
+– Delivered client-facing GenAI solutions and internal PoCs.  
+
+NIIT University – Teaching Assistant  
+Feb 2025 – May 2025 | Neemrana, Rajasthan  
+– Taught Digital Image Processing concepts.  
+– Explained matrices, filters, and CV techniques. Received excellent student feedback.  
+
+Labmentix, Collegetips.in, 1 Stop AI – AI Intern  
+6 Months Total | Remote  
+– Built and deployed 20+ AI/ML mini-projects (supervised learning, CV, NLP, pipelines) using Python & scikit-learn.
+
+PROJECTS  
+Agentic AI Document Assistant  
+LangChain, OpenAI, Python, Google APIs  
+– Natural language → formatted Docs, Sheets, Presentations using LLMs + automation.  
+
+DigiBuddy – RAG + LLM GenAI Chatbot  
+LangChain, Hugging Face, FAISS, OpenAI, Streamlit  
+– Built retrieval-augmented chatbot with fine-tuned LLMs and FAISS-powered vector search.  
+
+Plant Disease Classifier with Accelerated DL  
+TensorFlow, OpenCV, CNN, CUDA, NVIDIA DLI  
+– Leaf-image classifier across 38+ diseases. CUDA-trained, 90%+ accuracy, real-time inference.  
+
+ML-Based Intrusion Detection System  
+Scikit-learn, ML  
+– Research project on anomaly detection in CICDS-2017 dataset, emphasizing model tuning.  
+
+Retail Review Analyzer – Flipkart Customer Sentiment  
+NLP, Pandas, NLTK, Matplotlib  
+– Classifier + insights extractor based on sentiment analysis of Flipkart reviews.  
+
+Supermarket Inventory + Demand Forecasting System  
+Node.js, MongoDB, React.js, ML  
+– Billing + stock manager with ML-driven demand forecasting to optimize restocking.
+
+CERTIFICATIONS  
+NVIDIA Deep Learning Institute (DLI)  
+– Getting Started with Deep Learning  
+– Introduction to Transformer-Based NLP  
+– Generative AI with Diffusion Models  
+– Building LLM Applications with Prompt Engineering  
+– Using Retrieval-Augmented Generation with LLMs  
+– Rapid App Deployment with LLMs  
+– CUDA in Python  
+
+Forage Virtual Job Simulations  
+– Generative AI – BCG X  
+– Virtual Technology Experience – Deloitte  
+
+SKILLS  
+
+Core AI & ML  
+– ML, DL, Computer Vision, NLP, GenAI, Predictive Analytics, Agentic AI  
+
+Frameworks & Libraries  
+– PyTorch, TensorFlow, Keras, OpenCV, Hugging Face, LangChain, FAISS, Scikit-learn, Pandas, NumPy  
+
+Accelerated Computing (NVIDIA Stack)  
+– CUDA, TensorRT, NVIDIA NeMo, Triton Inference Server, cuDNN, ONNX  
+
+Full-Stack (Basic Proficiency)  
+– Python, Node.js, Express, React.js, MongoDB, Django, Flask, FastAPI, HTML/CSS, JS  
+
+Data Science  
+– Data Visualization, Model Optimization, EDA, Feature Engineering, Metrics  
+
+Soft Skills  
+– Leadership, Communication, Teamwork, Time Management, Public Speaking, Theatre  
+
+LEADERSHIP & EXTRAS  
+– President, Theatre Society – NIIT University  
+– Organizer, Ingenuity Fest 2024 & 2025  
+
+PROOF OF WORK  
+– Portfolio Drive: includes Certifications, Projects, LORs
