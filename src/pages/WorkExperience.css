@@ -7,6 +7,16 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.vertical-timeline-element-icon {
+  width: 70px !important;
+  height: 70px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+
 
 .timeline-container {
   text-align: center;
@@ -21,8 +31,8 @@
   margin-bottom: 40px;
   display: inline-block;
   text-align: center;
-  opacity: 0; /* Start invisible */
-  transform: translateY(20px); /* Start slightly lower */
+  opacity: 10; /* Start invisible */
+  transform: translateY(0px); /* Start slightly lower */
   animation: fadeInUp 2s ease-in-out both; /* Animation properties */
 }
 
