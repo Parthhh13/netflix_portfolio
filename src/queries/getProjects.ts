@@ -3,40 +3,74 @@ import { Project } from '../types';
 
 const projectsData: Project[] = [
   {
-    title: 'Agentic AI Document Assistant',
-    description: 'Natural language → formatted Docs, Sheets, Presentations using LLMs + automation.',
-    techUsed: 'LangChain, OpenAI, Python, Google APIs',
-    image: { url: '' },
+    title: 'AI Interviewer Agent',
+    description: 'AI-powered mock interviewer that integrates with Excel to simulate interviews, assess answers, and offer instant feedback.',
+    techUsed: 'Python, Streamlit, Agentic AI, Gemini',
+    image: { url: '/projects/AI-Interviewer.jpg' },
+    link: 'https://github.com/Parthhh13/Excel-Interviewer.git'
   },
   {
-    title: 'DigiBuddy – RAG + LLM GenAI Chatbot',
-    description: 'Built retrieval-augmented chatbot with fine-tuned LLMs and FAISS-powered vector search.',
-    techUsed: 'LangChain, Hugging Face, FAISS, OpenAI, Streamlit',
-    image: { url: '' },
+    title: 'Digibuddy – RAG + GenAI Digital Literacy Chatbot',
+    description: 'Retrieval-Augmented Generation (RAG) chatbot that empowers digital literacy; supports multi-language queries, interactive help, and content retrieval.',
+    techUsed: 'Python, Django, React, GenAI, RAG',
+    image: { url: '/projects/digibuddy.jpg' },
+    link: 'https://github.com/Parthhh13/Digibuddy-Rag.git'
   },
   {
-    title: 'Plant Disease Classifier with Accelerated DL',
-    description: 'Leaf-image classifier across 38+ diseases. CUDA-trained, 90%+ accuracy, real-time inference.',
-    techUsed: 'TensorFlow, OpenCV, CNN, CUDA, NVIDIA DLI',
-    image: { url: '' },
+    title: 'Brain Tumor Detection using CNN',
+    description: 'Deep learning model (CNN) to classify and detect brain tumors from medical images, enabling real-time, explainable diagnosis.',
+    techUsed: 'CNN, Deep Learning, Medical Imaging, Python',
+    image: { url: '/projects/Brain-tumor.jpg' },
+    link: 'https://github.com/Parthhh13/Brain-Tumor.git'
   },
   {
-    title: 'ML-Based Intrusion Detection System',
-    description: 'Research project on anomaly detection in CICDS-2017 dataset, emphasizing model tuning.',
-    techUsed: 'Scikit-learn, ML',
-    image: { url: '' },
+    title: 'Plant Disease Detection using CV, ML, and Accelerated DL',
+    description: 'Smart plant disease classifier combining computer vision, classical ML, and GPU-accelerated deep learning for rapid, field-ready diagnosis.',
+    techUsed: 'Streamlit, CNN, Machine Learning, Computer Vision',
+    image: { url: '/projects/Plant.jpg' },
+    link: 'https://github.com/Parthhh13/Plant-Disease-Diagnosis.git'
   },
   {
-    title: 'Retail Review Analyzer – Flipkart Customer Sentiment',
-    description: 'Classifier + insights extractor based on sentiment analysis of Flipkart reviews.',
-    techUsed: 'NLP, Pandas, NLTK, Matplotlib',
-    image: { url: '' },
+    title: 'Machine Learning based Intrusion Detection System (Research Paper)',
+    description: 'Research-driven anomaly detection system for network intrusion identification using advanced ML and cybersecurity approaches.',
+    techUsed: 'Machine Learning, Anomaly Detection, Cybersecurity',
+    image: { url: '/projects/ML IDS.jpg' },
+    link: ''
   },
   {
-    title: 'Supermarket Inventory + Demand Forecasting System',
-    description: 'Billing + stock manager with ML-driven demand forecasting to optimize restocking.',
-    techUsed: 'Node.js, MongoDB, React.js, ML',
-    image: { url: '' },
+    title: 'Supermarket Inventory Management System with Sales Forecasting',
+    description: 'Full-stack inventory and billing system with real-time sales forecasting, leveraging AI for smarter restocking and operations.',
+    techUsed: 'Node.js, Deep Learning, React, MongoDB, DevOps',
+    image: { url: '/projects/supermarket.png' },
+    link: 'https://github.com/Parthhh13/Supermarket-IMS.git'
+  },
+  {
+    title: 'Pet Friendly City Campaign Website',
+    description: 'Interactive campaign site—features info, stories, and a chatbot promoting pet-friendly urban policies for increased community impact.',
+    techUsed: 'Web Development, React, Chatbot',
+    image: { url: '/projects/Pet-friendly-city.jpg' },
+    link: 'https://github.com/Parthhh13/paw-prints-in-motion.git'
+  },
+  {
+    title: 'Netflix Portfolio',
+    description: 'Personal portfolio inspired by the Netflix interface; showcases skills, projects, and credentials in an engaging, modern UI.',
+    techUsed: 'Node.js, React',
+    image: { url: '/projects/Netflix.jpg' },
+    link: 'https://github.com/Parthhh13/netflix_portfolio.git'
+  },
+  {
+    title: 'Flipkart CSAT Prediction',
+    description: 'Sentiment analysis and customer satisfaction prediction using ML/NLP on Flipkart review data for actionable business insights.',
+    techUsed: 'Machine Learning, NLP, Data Analysis, EDA',
+    image: { url: '/projects/Flipkart.jpg' },
+    link: 'https://github.com/Parthhh13/Flipkart-Project'
+  },
+  {
+    title: 'Strava Data Analysis',
+    description: 'Advanced analytics and dynamic visualizations of Strava users\' fitness/activity data using Python and PowerBI.',
+    techUsed: 'Data Analysis, PowerBI, Python, Visualization',
+    image: { url: '/projects/StravaDA.jpg' },
+    link: 'https://drive.google.com/drive/folders/1yR0t0DQpiWM-KCeTVNnccmiCc_PG0dHK?usp=drive_link'
   },
 ];
 

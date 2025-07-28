@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Projects.css';
-import { FaReact, FaNodeJs, FaAws, FaDatabase, FaDocker, FaAngular, FaGithub, FaGitlab, FaGoogle, FaJava, FaJenkins, FaMicrosoft, FaPython, FaVuejs } from 'react-icons/fa';
-import { SiRubyonrails, SiPostgresql, SiMongodb, SiMaterialdesign, SiHtml5, SiCss3, SiJquery, SiAwsamplify, SiFirebase, SiTerraform, SiArgo } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaAws, FaDatabase, FaDocker, FaAngular, FaGithub, FaGitlab, FaGoogle, FaJava, FaJenkins, FaMicrosoft, FaPython, FaVuejs, FaExternalLinkAlt } from 'react-icons/fa';
+import { SiRubyonrails, SiPostgresql, SiMongodb, SiMaterialdesign, SiHtml5, SiCss3, SiJquery, SiAwsamplify, SiFirebase, SiTerraform, SiArgo, SiStreamlit, SiDjango, SiPowerbi } from 'react-icons/si';
 import { Project } from '../types';
 import { getProjects } from '../queries/getProjects';
 import { GrDeploy, GrKubernetes } from "react-icons/gr";
@@ -57,8 +57,22 @@ const techIcons: { [key: string]: JSX.Element } = {
   'Tailwind CSS': <SiCss3 />,
   'Bootstrap': <SiCss3 />,
   'JQuery': <SiJquery />,
+  // New tech icons for the projects
+  'Streamlit': <SiStreamlit />,
+  'Django': <SiDjango />,
+  'Machine Learning': <FaPython />,
+  'CNN': <FaPython />,
+  'Deep Learning': <FaPython />,
+  'Medical Imaging': <FaDatabase />,
+  'Web Development': <SiHtml5 />,
+  'Chatbot': <FaReact />,
+  'NLP': <FaPython />,
+  'Data Analysis': <FaDatabase />,
+  'PowerBI': <SiPowerbi />,
+  'Visualization': <FaDatabase />,
+  'Anomaly Detection': <FaPython />,
+  'Cybersecurity': <FaDatabase />,
 };
-
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([])
@@ -94,6 +108,16 @@ const Projects: React.FC = () => {
                   </span>
                 ))}
               </div>
+              {project.link && (
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="project-link"
+                >
+                  <FaExternalLinkAlt /> View Project
+                </a>
+              )}
             </div>
           </div>
         ))}
