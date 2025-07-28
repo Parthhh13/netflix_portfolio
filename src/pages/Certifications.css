@@ -13,6 +13,24 @@
   animation: backgroundShift 10s ease-in-out infinite;
 }
 
+.linkedin-note {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background: rgba(229, 9, 20, 0.1);
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  border-radius: 10px;
+  animation: slideDown 0.8s ease-in-out forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.linkedin-note p {
+  margin: 0;
+  color: #e50914;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
 .certifications-title {
   font-size: 2.5rem;
   color: #e50914; /* Netflix red */
@@ -60,22 +78,20 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .certification-icon {
   font-size: 2rem;
   color: #4a90e2;
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.certification-link {
-  font-size: 1.5rem;
-  color: #e50914; /* Netflix red */
-  transition: transform 0.2s ease;
-}
-
-.certification-card:hover .certification-link {
-  transform: scale(1.2);
+.nvidia-icon {
+  color: #00ff00 !important;
 }
 
 .issued-date {

@@ -14,6 +14,7 @@ import Reading from './pages/Reading';
 import Blogs from './pages/Blogs';
 import Certifications from './pages/Certifications';
 import Education from './pages/Education';
+import AboutMe from './pages/AboutMe';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       <Route path="/profile/:profileName" element={<Layout><ProfilePage /></Layout>} />
       <Route path="/work-experience" element={<Layout><WorkExperience /></Layout>} />
       <Route path="/education" element={<Layout><Education /></Layout>} />
+      <Route path="/about-me" element={<Layout><AboutMe /></Layout>} />
       <Route path="/recommendations" element={<Layout><Recommendations /></Layout>} />
       <Route path="/skills" element={<Layout><Skills /></Layout>} />
       <Route path="/projects" element={<Layout><Projects /></Layout>} />

@@ -38,8 +38,10 @@ const timelineData: TimelineItem[] = [
     title: 'Teaching Assistant',
     techStack: 'Digital Image Processing',
     summaryPoints: [
-      'Taught Digital Image Processing concepts.',
-      'Explained matrices, filters, and CV techniques. Received excellent student feedback.'
+      'Assisted students in mastering core Digital Image Processing concepts, including matrices, filtering, and computer vision techniques.',
+      'Led classroom sessions, explained complex topics, and provided hands-on support for assignments and projects.',
+      'Created instructional materials and offered personalized mentoring, consistently receiving positive feedback for clarity and engagement.',
+      'Fostered collaborative learning, improving class understanding and technical confidence.'
     ],
     dateRange: 'Feb 2025 – May 2025 · On Site (Neemrana, Rajasthan)',
     logo: '/companies/NIIT.png',

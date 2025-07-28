@@ -2,28 +2,78 @@ import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
 
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaJava } from 'react-icons/fa';
-import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiRabbitmq, SiImessage } from 'react-icons/si';
+// Core AI & ML Icons
+import { FaBrain, FaEye, FaLanguage, FaRobot } from 'react-icons/fa';
+import { SiTensorflow, SiPytorch, SiKeras, SiOpencv, SiHuggingface, SiLangchain, SiScikitlearn, SiPandas, SiNumpy } from 'react-icons/si';
+
+// Accelerated Computing Icons
+import { SiNvidia, SiOnnx } from 'react-icons/si';
+
+// Full-Stack Icons
+import { FaReact, FaNodeJs, FaPython, FaDatabase } from 'react-icons/fa';
+import { SiExpress, SiMongodb, SiDjango, SiFlask, SiFastapi, SiHtml5 } from 'react-icons/si';
+
+// Data Science Icons
+import { FaChartBar, FaCogs, FaSearch, FaWrench, FaCalculator } from 'react-icons/fa';
+
+// Soft Skills Icons
+import { FaUsers, FaComments, FaHandshake, FaClock, FaMicrophone, FaTheaterMasks } from 'react-icons/fa';
+
 import { Skill } from '../types';
 
 const iconMap: { [key: string]: JSX.Element } = {
-  SiRubyonrails: <SiRubyonrails />,
-  FaNodeJs: <FaNodeJs />,
-  SiSpringboot: <SiSpringboot />,
-  FaJava: <FaJava />,
-  SiPhp: <SiPhp />,
-  FaReact: <FaReact />,
-  SiTypescript: <SiTypescript />,
-  FaAws: <FaAws />,
-  FaDocker: <FaDocker />,
-  SiPostgresql: <SiPostgresql />,
-  SiMysql: <SiMysql />,
-  SiKubernetes: <SiKubernetes />,
-  SiGooglecloud: <SiGooglecloud />,
-  SiHeroku: <SiHeroku />,
-  SiNetlify: <SiNetlify />,
-  SiRabbitmq: <SiRabbitmq />,
-  SiImessage: <SiImessage />,
+  // Core AI & ML
+  'Machine Learning': <FaBrain />,
+  'Deep Learning': <FaBrain />,
+  'Computer Vision': <FaEye />,
+  'NLP': <FaLanguage />,
+  'GenAI': <FaRobot />,
+  
+  // Frameworks & Libraries
+  'PyTorch': <SiPytorch />,
+  'TensorFlow': <SiTensorflow />,
+  'Keras': <SiKeras />,
+  'OpenCV': <SiOpencv />,
+  'Hugging Face': <SiHuggingface />,
+  'LangChain': <SiLangchain />,
+  'FAISS': <FaDatabase />,
+  'Scikit-learn': <SiScikitlearn />,
+  'Pandas': <SiPandas />,
+  'NumPy': <SiNumpy />,
+  
+  // Accelerated Computing
+  'CUDA': <SiNvidia />,
+  'TensorRT': <SiNvidia />,
+  'NVIDIA NeMo': <SiNvidia />,
+  'Triton Inference Server': <SiNvidia />,
+  'cuDNN': <SiNvidia />,
+  'ONNX': <SiOnnx />,
+  
+  // Full-Stack
+  'Python': <FaPython />,
+  'Node.js': <FaNodeJs />,
+  'Express': <SiExpress />,
+  'React.js': <FaReact />,
+  'MongoDB': <SiMongodb />,
+  'Django': <SiDjango />,
+  'Flask': <SiFlask />,
+  'FastAPI': <SiFastapi />,
+  'HTML/CSS/JS': <SiHtml5 />,
+  
+  // Data Science
+  'Data Visualization': <FaChartBar />,
+  'Model Optimization': <FaCogs />,
+  'EDA': <FaSearch />,
+  'Feature Engineering': <FaWrench />,
+  'Metrics': <FaCalculator />,
+  
+  // Soft Skills
+  'Leadership': <FaUsers />,
+  'Communication': <FaComments />,
+  'Teamwork': <FaHandshake />,
+  'Time Management': <FaClock />,
+  'Public Speaking': <FaMicrophone />,
+  'Theatre': <FaTheaterMasks />,
 };
 
 
@@ -57,7 +107,7 @@ const Skills: React.FC = () => {
           <div className="skills-grid">
             {skillsByCategory[category].map((skill: any, idx: number) => (
               <div key={idx} className="skill-card">
-                <div className="icon">{iconMap[skill.icon] || <FaReact />}</div>
+                <div className="icon">{iconMap[skill.name] || <FaReact />}</div>
                 <h3 className="skill-name">
                   {skill.name.split('').map((letter: any, i: number) => (
                     <span key={i} className="letter" style={{ animationDelay: `${i * 0.05}s` }}>

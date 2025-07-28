@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './ContactMe.css';
-import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { ContactMe as IContactMe } from '../types';
 import { getContactMe } from '../queries/getContactMe';
-const profilePic = 'https://avatars.githubusercontent.com/u/Parthhh13';
+const profilePic = '/profile/profile-photo.jpg';
 
 const ContactMe: React.FC = () => {
 
@@ -31,14 +31,24 @@ const ContactMe: React.FC = () => {
             {userData.summary}
           </p>
           <p className="badge-company">{userData.companyUniversity}</p>
-          <a
-            href={userData.linkedinLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="badge-link"
-          >
-            <FaLinkedin className="linkedin-icon" /> View Profile
-          </a>
+          <div className="social-links">
+            <a
+              href={userData.linkedinLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="badge-link"
+            >
+              <FaLinkedin className="linkedin-icon" /> LinkedIn
+            </a>
+            <a
+              href="https://github.com/Parthhh13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="badge-link github-link"
+            >
+              <FaGithub className="github-icon" /> GitHub
+            </a>
+          </div>
         </div>
       </div>
       <div className="contact-header">
