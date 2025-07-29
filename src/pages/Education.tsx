@@ -8,6 +8,7 @@ import { getTimeline } from '../queries/getTimeline';
 
 const Education: React.FC = () => {
   const [timeLineData, setTimeLineData] = useState<TimelineItem[] | null>(null);
+  const [showScroll, setShowScroll] = useState(true);
 
   useEffect(() => {
     async function fetchTimelineItem() {
@@ -15,16 +16,38 @@ const Education: React.FC = () => {
       setTimeLineData(data);
     }
     fetchTimelineItem();
+
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowScroll(false);
+      } else {
+        setShowScroll(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   if (!timeLineData) return <div>Loading...</div>;
 
   const educationItems = timeLineData.filter(item => item.timelineType === 'education');
 
+  const scrollToContent = () => {
+    window.scrollBy({
+      top: window.innerHeight / 2,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <div className="timeline-container">
         <h2 className="timeline-title">🎓 Education</h2>
+        <div className={`scroll-indicator ${!showScroll ? 'hidden' : ''}`} onClick={scrollToContent}>
+          <div className="scroll-arrow">↓</div>
+          <div className="scroll-arrow">↓</div>
+        </div>
       </div>
       <VerticalTimeline>
         {educationItems.map((item, index) => {

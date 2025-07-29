@@ -8,8 +8,8 @@ import { getTimeline } from '../queries/getTimeline';
 
 
 const WorkExperience: React.FC = () => {
-
   const [timeLineData, setTimeLineData] = useState<TimelineItem[] | null>(null);
+  const [showScroll, setShowScroll] = useState(true);
 
   useEffect(() => {
     async function fetchTimelineItem() {
@@ -17,6 +17,17 @@ const WorkExperience: React.FC = () => {
       setTimeLineData(data);
     }
     fetchTimelineItem();
+
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowScroll(false);
+      } else {
+        setShowScroll(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
 
@@ -25,10 +36,21 @@ const WorkExperience: React.FC = () => {
 
   const workItems = timeLineData.filter(item => item.timelineType === 'work');
 
+  const scrollToContent = () => {
+    window.scrollBy({
+      top: window.innerHeight / 2,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <div className="timeline-container">
         <h2 className="timeline-title">💼 Work Experience</h2>
+        <div className={`scroll-indicator ${!showScroll ? 'hidden' : ''}`} onClick={scrollToContent}>
+          <div className="scroll-arrow">↓</div>
+          <div className="scroll-arrow">↓</div>
+        </div>
       </div>
       <VerticalTimeline>
         {workItems.map((item, index) => (
