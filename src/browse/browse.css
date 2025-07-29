@@ -8,6 +8,15 @@
   position: relative;
 }
 
+.browse-container h1 {
+  color: #ffffff;
+  font-size: 48px !important;
+  font-weight: normal !important;
+  margin: 0 0 30px 0 !important;
+  text-align: center;
+  width: 100%;
+}
+
 .back-button {
   position: absolute;
   top: 30px;

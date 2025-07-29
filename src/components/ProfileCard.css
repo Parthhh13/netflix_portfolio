@@ -1,39 +1,27 @@
 .profile-card {
   position: relative;
-  margin: 10px;
+  margin: 0 2vw;  /* Space between cards */
   cursor: pointer;
-  height: 10vw;
-  max-height: 200px;
-  max-width: 200px;
-  min-height: 84px;
-  min-width: 84px;
+  width: 200px;    /* Fixed width */
+  height: 200px;   /* Fixed height */
   text-decoration: none;
-  width: 10vw;
-  border-radius: 5rem;
 }
 
-.profile-card:hover {
-  border-color: #e5e5e5;
-  color: #e5e5e5;
+.profile-card:hover .image-container {
+  border: 3px solid #ffffff;
 }
 
-.profile-name {
-  color: #e5e5e5;
-  text-transform: capitalize;
+.profile-card:hover .profile-name {
+  color: #ffffff;
 }
 
 .image-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
-  border-radius: 0.5rem;
-  border: 0.2em solid transparent;
-}
-
-.image-container:hover {
-  border-color: #e5e5e5;
-  color: #e5e5e5;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  transition: border-color 0.2s ease;
 }
 
 .profile-image {
@@ -43,16 +31,13 @@
 }
 
 .profile-name {
-  color: white;
+  color: #666666;
   display: block;
-  font-size: 10vw;
-  line-height: 1.2em;
-  margin: 0.6em 0;
-  min-height: 1.8em;
-  overflow: hidden;
+  font-size: 20px !important;
   text-align: center;
-  text-overflow: ellipsis;
-  font-weight: 400;
+  margin: 20px 0 0 0;
+  transition: color 0.2s ease;
+  text-transform: capitalize;
 }
 
 @media (max-width: 768px) {

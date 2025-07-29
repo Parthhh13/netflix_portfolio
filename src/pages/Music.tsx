@@ -4,24 +4,24 @@ import './Music.css';
 const playlists = [
   {
     title: "Fire Hiphop 🔥🐉",
-    artists: "Drake, Travis Scott, Kendrick Lamar, J. Cole, Post Malone",
+    artists: "Seedhe Maut, Raftaar, Krsna, Rawal, Raga, Ikka",
     trackCount: 92,
-    imgSrc: "https://picsum.photos/seed/firehiphop/300/300",
-    playlistUrl: "https://music.youtube.com/playlist?list=YOUR_PLAYLIST_ID_1"
+    imgSrc: "/music/hiphop.jpg",
+    playlistUrl: "https://music.youtube.com/playlist?list=PL2eVWk_y15MpCyNRFD8s6b7kzdhltLoML"
   },
   {
     title: "Mindless Cruize ✨",
-    artists: "The Weeknd, Dua Lipa, Doja Cat, Ariana Grande, BTS",
+    artists: "Karun, Nanku, Arpit Bala, Talwinder, Seedhe Maut",
     trackCount: 48,
-    imgSrc: "https://picsum.photos/seed/mindlesscruize/300/300",
-    playlistUrl: "https://music.youtube.com/playlist?list=YOUR_PLAYLIST_ID_2"
+    imgSrc: "/music/mindless.jpg",
+    playlistUrl: "https://music.youtube.com/playlist?list=PL2eVWk_y15MrgW-GrqRAeRJXdhQJybNyp"
   },
   {
-    title: "Punjabi\\Haryanvi Drill 🍗🏢",
-    artists: "AP Dhillon, Sidhu Moose Wala, Diljit Dosanjh, Karan Aujla",
+    title: "Punjabi/Haryanvi Drill 🍗🏢",
+    artists: "Karan Aujla, Sidhu Moosewala, Dhanda Nyoliwala, Yo Yo Honey Singh, AP Dhillon, Shubh, Diljit Dosanjh",
     trackCount: 107,
-    imgSrc: "https://picsum.photos/seed/punjabidrill/300/300",
-    playlistUrl: "https://music.youtube.com/playlist?list=YOUR_PLAYLIST_ID_3"
+    imgSrc: "/music/punjabi.jpg",
+    playlistUrl: "https://music.youtube.com/playlist?list=PL2eVWk_y15Moi6UcnSeQkBJAZdgSH5vFR"
   }
 ];
 
@@ -35,7 +35,7 @@ const Music: React.FC = () => {
       <div className="music-header">
         <div className="profile-section">
           <img 
-            src="https://picsum.photos/seed/profile/50/50" 
+            src="/profile/profile-photo.jpg" 
             alt="Profile" 
             className="profile-pic"
           />
@@ -49,17 +49,16 @@ const Music: React.FC = () => {
       <div className="music-intro">
         <h3>My Music Journey</h3>
         <p>
-          From the raw energy of classic rock to the modern beats of hip-hop and the soulful rhythms of Punjabi music, 
-          my taste spans across genres and cultures. I believe music is the universal language that connects us all, 
-          and each playlist represents a different mood, moment, or memory in my life.
+        Music is the pulse behind my projects and creativity. I thrive on the raw energy of Desi hiphop and drill, with Seedhe Maut as my #1 inspiration, and I’m a huge fan of Karan Aujla, Sidhu Moosewala, and the pioneers of modern Punjabi pop. From late-night chill rap to melodic and softcore hiphop, my playlists span everything from hype to focus.
+        </p>
+        <p>
+        Whether I’m building AI, hitting the road, or prepping for a big performance, music sets my pace, sharpens my mood, and keeps me in my element. My favorite genres—Desi hiphop, Punjabi drill, and melodic rap—mirror my approach to work and life: bold, experimental, and always authentic. The rhythms here aren’t just background—they’re the soundtrack for ambition, creativity, and drive that define me as both an engineer and a creator.
         </p>
         <div className="genre-tags">
-          <span className="genre-tag">Rock</span>
-          <span className="genre-tag">Hip-Hop</span>
-          <span className="genre-tag">Punjabi</span>
-          <span className="genre-tag">Haryanvi</span>
-          <span className="genre-tag">Drill</span>
-          <span className="genre-tag">Classic Rock</span>
+          <span className="genre-tag">Desi Hip-Hop</span>
+          <span className="genre-tag">Punjabi Pop</span>
+          <span className="genre-tag">Haryanvi drill</span>
+          <span className="genre-tag">Melodic Rap</span>
         </div>
       </div>
 

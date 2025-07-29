@@ -19,7 +19,7 @@
   margin-bottom: 1rem;
 }
 
-.profile-pic {
+.music-page .profile-pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -27,30 +27,30 @@
   border: 2px solid #ff0000;
 }
 
-.profile-info {
+.music-page .profile-info {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-.profile-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #cccccc;
+.music-page .profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
   margin: 0;
   letter-spacing: 0.5px;
 }
 
-.page-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+.music-page .page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
   margin: 0;
-  color: #fff;
+  color: #cccccc;
 }
 
 .music-intro {
   padding: 1.5rem 2rem;
-  max-width: 1000px; /* Increased width for longer horizontal layout */
+  max-width: 10000px; /* Increased width for longer horizontal layout */
   margin: 0 auto;
 }
 
@@ -159,7 +159,7 @@
   opacity: 1;
 }
 
-.play-button {
+.playlist-card .play-button {
   background: #ff0000;
   color: white;
   width: 60px;
@@ -174,7 +174,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.play-button:hover {
+.playlist-card .play-button:hover {
   transform: scale(1.1);
 }
 
