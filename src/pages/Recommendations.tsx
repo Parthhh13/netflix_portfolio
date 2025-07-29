@@ -1,24 +1,52 @@
 import React from 'react';
 import './Recommendations.css';
-import chrisProfilePic from '../images/chris.jpg'; // Adjust the path based on your directory structure
 
 const Recommendations: React.FC = () => {
   return (
     <div className='timeline-container'>
       <div className="recommendation-card">
         <div className="recommendation-header">
-          <img src={chrisProfilePic} alt="Chris Smith" className="profile-pic" />
+          <div className="company-logo">
+            <h2>SMARRTIF AI</h2>
+          </div>
           <div>
-            <h3>Chris Smith</h3>
-            <p>Head of Kajima Community</p>
-            <p className="date">October 24, 2024</p>
+            <h3>Dieksha Priyaa Mishra</h3>
+            <p>Founder & Authorized Signatory</p>
+            <p className="date">10th July 2025</p>
           </div>
         </div>
+        
         <div className="recommendation-body">
-          <p>✨ "It is with great pleasure that I write this reference for Parth Pahwa, who worked for us as a software developer at Kajima from June 2023. Unfortunately, due to a change in the company’s structure, we have made the difficult decision to make their position redundant. This in no way reflects on their performance, which was consistently excellent.</p>
-          <p>During their time with us, Parth demonstrated strong technical expertise, a passion for problem-solving, a willingness to learn, and a collaborative spirit that greatly contributed to our team’s success. They played a pivotal role in developing and maintaining key features of our software <strong>BookingsPlus</strong> and <strong>NHS Open Space</strong>, consistently delivering high-quality code while meeting project deadlines. Their ability to quickly adapt to new technologies and their proactive approach to finding innovative solutions set them apart."</p>
-          <p>💼 "Parth also showed exceptional teamwork and communication skills, effectively collaborating with cross-functional teams, including product managers, designers, and QA. Their professionalism, positive attitude, and dedication to their work made them an asset to the team."</p>
-          <p>🌟 "I have no doubt that Parth will be a valuable addition to any organization, and I wholeheartedly recommend them for any future opportunities."</p>
+          <div className="letter-header">
+            <h4>Letter of Recommendation</h4>
+            <p>To Whom May It Concern</p>
+          </div>
+          
+          <p>Greetings!</p>
+          
+          <p>It is with great pleasure that I recommend <strong>Parth</strong>, who has successfully completed his 1-month internship at <strong>SMARRTIF AI</strong> as an Associate Consultant – AI/ML Trainer.</p>
+          
+          <p>In a short span of time, Parth has demonstrated exceptional enthusiasm, dedication, and technical capability. He actively contributed to the development of key AI tools such as the <strong>CV Analyzer Tool</strong> and the <strong>LinkedIn Analyzer Tool</strong>, showcasing a deep understanding of AI/ML concepts and their real-world application.</p>
+          
+          <p>Beyond his technical work, he has also played a vital role in <strong> client acquisition efforts</strong>, directly supporting the <strong>company's revenue growth </strong>. He showed great initiative in contributing to training program design, team management, and even assisting in talent hiring for the organization—truly going beyond his core responsibilities.</p>
+          
+          <p>Parth's passion for the AI/ML domain and his ability to<strong> manage multiple tasks effectively </strong>makes him a promising professional. His contributions during this internship have been both impactful and appreciated.</p>
+          
+          <p>We wish Parth continued success in all his future endeavors and strongly recommend him for roles where innovation, leadership, and technical skill are valued.</p>
+          
+          <div className="letter-footer">
+            <div className="contact-info">
+              <p><strong>Contact Information:</strong></p>
+              <p>📧 contactus@smarrtifai.com</p>
+              <p>🌐 www.smarrtifai.com</p>
+              <p>📞 +91-836-816-2544</p>
+            </div>
+            <div className="signature">
+              <p><strong>Authorized Signatory</strong></p>
+              <p><strong>SMARRTIF AI (OPC) PRIVATE LIMITED</strong></p>
+              <p><strong>Dieksha Priyaa Mishra - Founder</strong></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

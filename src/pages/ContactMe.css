@@ -1,6 +1,6 @@
 .contact-container {
   padding: 100px 20px;
-  background-color: #141414;
+  background-color: #000000;
   color: #e6e6e6;
   text-align: center;
   animation: fadeIn 0.8s ease-in-out;
@@ -10,14 +10,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #222;
+  background: #1a1a1a;
   border-radius: 8px;
   padding: 15px 20px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
   color: #e6e6e6;
   max-width: 350px;
   margin: 0 auto;
+  border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 .badge-avatar {
@@ -59,7 +60,7 @@
 .badge-link {
   display: inline-flex;
   align-items: center;
-  background-color: #0077b5;
+  background-color: #ff0000;
   color: #fff;
   padding: 8px 12px;
   border-radius: 5px;
@@ -70,7 +71,7 @@
 }
 
 .badge-link:hover {
-  background-color: #005983;
+  background-color: #cc0000;
 }
 
 .social-links {
@@ -80,11 +81,11 @@
 }
 
 .github-link {
-  background-color: #333;
+  background-color: #ff0000;
 }
 
 .github-link:hover {
-  background-color: #555;
+  background-color: #cc0000;
 }
 
 .linkedin-icon {
@@ -112,22 +113,24 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #1e1e1e;
+  background: #1a1a1a;
   padding: 10px 20px;
   border-radius: 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 .contact-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(214, 43, 43, 0.6);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+  border-color: #ff0000;
 }
 
 .contact-icon {
   font-size: 1.5rem;
-  color: #d62b2b;
+  color: #ff0000;
 }
 
 .contact-link {
@@ -151,7 +154,7 @@
 
 .coffee-icon {
   font-size: 2rem;
-  color: #ff9900;
+  color: #ff0000;
   animation: swing 1s infinite ease-in-out;
 }
 

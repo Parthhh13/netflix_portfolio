@@ -10,7 +10,7 @@ import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe';
 import Layout from './Layout';
 import Music from './pages/Music';
-import Reading from './pages/Reading';
+import Hobbies from './pages/Hobbies';
 import Blogs from './pages/Blogs';
 import Certifications from './pages/Certifications';
 import Education from './pages/Education';
@@ -30,7 +30,7 @@ const App: React.FC = () => {
       <Route path="/projects" element={<Layout><Projects /></Layout>} />
       <Route path="/contact-me" element={<Layout><ContactMe /></Layout>} />
       <Route path="/music" element={<Layout><Music /></Layout>} />
-      <Route path="/reading" element={<Layout><Reading /></Layout>} />
+      <Route path="/hobbies" element={<Layout><Hobbies /></Layout>} />
       <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
       <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
     </Routes>

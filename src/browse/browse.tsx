@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import ProfileCard from '../components/ProfileCard';
 import blueImage from '../images/blue.png';
 import greyImage from '../images/grey.png';
@@ -31,8 +32,15 @@ const Browse: React.FC = () => {
     navigate(`/profile/${profile.name}`, { state: { profileImage: profile.image, backgroundGif: profile.backgroundGif } });
   };
 
+  const handleBackClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="browse-container">
+      <button className="back-button" onClick={handleBackClick}>
+        <FaArrowLeft />
+      </button>
       <p className='who-is-watching'>Who's Watching?</p>
       <div className="profiles">
         {profiles.map((profile, index) => (
