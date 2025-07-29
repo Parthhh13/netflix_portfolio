@@ -19,15 +19,17 @@ const continueWatchingConfig = {
   developer: [
     { title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
     { title: "Hobbies", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/hobbies" },
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
+    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/networking/250/200", link: "/recommendations"},
     { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
   ],
   'casual viewer': [
-    { title: "Hobbies", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/hobbies" },
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
-  ],
+    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/networking/250/200", link: "/recommendations"},
+    { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
+    { title: "Projects", imgSrc: "https://picsum.photos/seed/development/250/200", link: "/projects" },
+    { title: "Experience", imgSrc: "https://picsum.photos/seed/work/250/200", link: "/work-experience"},
+    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" },
+  ]
 };
 
 const ContinueWatching: React.FC<ContinueWatchingProps> = ({ profile }) => {

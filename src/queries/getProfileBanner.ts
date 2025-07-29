@@ -6,7 +6,7 @@ const profileBannerData: ProfileBanner = {
   headline: 'Parth Pahwa | AI Engineer',
   resumeLink: { url: '/ParthPahwaResume.pdf' },
   linkedinLink: 'https://www.linkedin.com/in/parth-pahwa-4501982a8/',
-  profileSummary: 'AI Engineer with a strong foundation across the full AI umbrella — Machine Learning, Deep Learning, Computer Vision, and NLP. Backed by 1 year of cumulative internship experience, part of the NVIDIA Inception and Developer Programs, and NVIDIA DLI Certified. Skilled in building and deploying end-to-end, production-ready GenAI agents and accelerated AI systems using CUDA, NeMo, and TensorRT — focused on solving real-world problems with impact.'
+  profileSummary: 'AI Engineer specializing across the full AI spectrum—including ML, DL, Computer Vision, NLP, GenAI and Agentic AI—dedicated to building real-world, impact-driven projects. Backed by a year of diverse internship experience and multiple strong recommendations, I’m known for my problem-solving mindset, leadership, and collaborative skills. As an NVIDIA DLI certified developer, I continuously push technical boundaries, leveraging advanced tools for production-ready solutions. My aspiration is to keep creating and leading teams that turn cutting-edge AI into meaningful, lasting change—driving innovation that truly matters.'
 };
 
 export async function getProfileBanner(): Promise<ProfileBanner> {
