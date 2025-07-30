@@ -15,7 +15,7 @@ import Blogs from './pages/Blogs';
 import Certifications from './pages/Certifications';
 import Education from './pages/Education';
 import AboutMe from './pages/AboutMe';
-import { SpeedInsights } from "@vercel/speed-insights/react"
+//import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const App: React.FC = () => {
   return (

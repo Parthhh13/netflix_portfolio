@@ -7,8 +7,16 @@ interface PlayButtonProps {
 }
 
 const PlayButton: React.FC<PlayButtonProps> = ({ onClick, label = "Play" }) => {
+  const handleButtonClick = () => {
+    if (label === "Resume") {
+      window.open('https://drive.google.com/file/d/1AuWfgxitTpfr9oOayTT2GIvpY-1u8ybc/view?usp=sharing', '_blank');
+    } else if (onClick) {
+      onClick();
+    }
+  };
+
   return (
-    <button className="play-button" onClick={onClick} type="button">
+    <button className="play-button" onClick={handleButtonClick} type="button">
       <div className="icon-container">
         <svg
           xmlns="http://www.w3.org/2000/svg"
