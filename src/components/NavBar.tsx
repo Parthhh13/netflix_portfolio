@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaTools, FaProjectDiagram, FaEnvelope, FaUser, FaGraduationCap } from 'react-icons/fa'; // Import icons
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
-  const location = useLocation();
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const profileImage = location.state?.profileImage || "/images/blue.png'";
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 80);
@@ -51,7 +49,7 @@ const Navbar: React.FC = () => {
             <div></div>
             <div></div>
           </div>
-          <img src={profileImage} alt="Profile" className="profile-icon" onClick={() => { navigate('/browse') }} />
+          <img src="/images/blue.png" alt="Profile" className="profile-icon" onClick={() => { navigate('/browse') }} />
         </div>
       </nav>
 
